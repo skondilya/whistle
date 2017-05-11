@@ -1,0 +1,10 @@
+CREATE DATABASE whistle;
+
+USE whistle;
+
+CREATE TABLE 'contacts' (
+	id INTEGER NOT NULL AUTO_INCREMENT,
+	name VARCHAR (255) NOT NULL,
+	email VARCHAR (320),
+	PRIMARY KEY (id)
+);
