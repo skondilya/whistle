@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/LouiseNyambati/whistle/issues"
   },
-  "homepage": "https://github.com/LouiseNyambati/whistle#readme"
+  "homepage": "https://github.com/LouiseNyambati/whistle#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0"
+  }
 }
