@@ -1,3 +1,4 @@
+
 .start,.stop{
 	background: #ADD8E6;
 	width: 30%;	
@@ -20,5 +21,29 @@
 
   /* Visual */
   background-color: #666;
-  
+ }
+
+.alertimg{
+	width: 228px;
+	height: 228px;
+	
+}
+.policeimg{
+	width: 228px;
+	height: 228px;
+}
+.police{
+	margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+.sos{
+	margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+h1{
+	font-size: 28px;
+	text-align: center;
 }
