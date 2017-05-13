@@ -1,6 +1,5 @@
+
 $(document).ready(function(){
-
-
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -12,6 +11,7 @@ function getLocation() {
 var lat ="";
 var long ="";
 
+
 function getPosition(position) {
     lat = position.coords.latitude ;
     console.log(lat);
@@ -21,14 +21,16 @@ function getPosition(position) {
 getLocation(lat,long);
 
 
-        function myMap() {
-           var mapOptions = {
-               center: new google.maps.LatLng(lat,long),
-               zoom: 10,
-               mapTypeId: google.maps.MapTypeId.HYBRID
-           }
-           var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+function myMap() {
+   var mapOptions = {
+       center: new google.maps.LatLng(lat,long),
+       zoom: 10,
+       mapTypeId: google.maps.MapTypeId.HYBRID
+}
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-      }
+}
+myMap();
 
-  });
+
+});
