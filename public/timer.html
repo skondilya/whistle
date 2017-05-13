@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title Text</title>
+  <title>Timer</title>
   <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -14,6 +14,7 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.js">
     </script>
+    <script type="text/javascript" src="public/assets/javascript/timer.js"></script>
   
 </head>
 <body>
@@ -35,8 +36,10 @@
 </nav>
 <h1>Timer</h1>
 
-  <button class="start" value="start"><h1>START</h1></button>
-  <button class="stop"><h1>STOP</h1></button>
+  <h1><time>00:00:00</time></h1>
+<button id="start">start</button>
+<button id="stop">stop</button>
+<button id="clear">clear</button>
 
 <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
