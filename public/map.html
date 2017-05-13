@@ -11,7 +11,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="/public/assets/project.css" type="text/css" />
-  <link rel="stylesheet" href="[PATH or URL]">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js">
+    </script>
+
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -30,6 +33,11 @@
     </ul>
   </div>
 </nav>
+
+
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+
   <!-- Start of footer -->
       <footer class="footer navbar-fixed-bottom">
         <div class="two-toned-footer-color"></div>
@@ -38,5 +46,15 @@
         </p>
       </footer>
       <!-- End of footer -->
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfbFj3x7Wjo4AnWFSJSWLLaArMrnEpZFw&callback=initMap">
+    </script>
+
+    <script src="assets/javascript/map.js">
+</script>
 </body>
 </html>
+
+
+
