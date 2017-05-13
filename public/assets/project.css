@@ -19,14 +19,12 @@
   width: 100%;
   height: 60px;
 
-  /* Visual */
-  background-color: #666;
  }
 
 .alertimg{
 	width: 228px;
 	height: 228px;
-	
+
 }
 .policeimg{
 	width: 228px;
@@ -46,4 +44,5 @@
 h1{
 	font-size: 28px;
 	text-align: center;
+
 }
