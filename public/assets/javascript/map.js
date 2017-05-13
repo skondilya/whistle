@@ -20,24 +20,17 @@ function getPosition(position) {
 }
 getLocation(lat,long);
 
+
 function myMap() {
-     var mapOptions = {
-         center: new google.maps.LatLng(lat,long),
-         zoom: 10,
-         mapTypeId: google.maps.MapTypeId.HYBRID
-     }
-     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+   var mapOptions = {
+       center: new google.maps.LatLng(lat,long),
+       zoom: 10,
+       mapTypeId: google.maps.MapTypeId.HYBRID
 }
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-        function myMap() {
-           var mapOptions = {
-               center: new google.maps.LatLng(lat,long),
-               zoom: 10,
-               mapTypeId: google.maps.MapTypeId.HYBRID
-           }
-           var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
 myMap();
-      }
 
-  });
+});
 
