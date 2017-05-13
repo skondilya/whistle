@@ -28,7 +28,7 @@ getLocation(lat,long);
                mapTypeId: google.maps.MapTypeId.HYBRID
            }
            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-myMap();
+
       }
 
   });
