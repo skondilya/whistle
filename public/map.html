@@ -1,60 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title Text</title>
-  <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="/public/assets/project.css" type="text/css" />
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery.js">
-    </script>
-
-</head>
-<body>
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="main.html">Whistle</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contacts</a></li>
-      <li><a href="timer.html">Get me Home</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
-
-
-    <h3>My Google Maps Demo</h3>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
     <div id="map"></div>
-
-  <!-- Start of footer -->
-      <footer class="footer navbar-fixed-bottom">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-          &copy; Copyright Whistle 2017
-        </p>
-      </footer>
-      <!-- End of footer -->
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfbFj3x7Wjo4AnWFSJSWLLaArMrnEpZFw&callback=initMap">
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
     </script>
-
-    <script src="assets/javascript/map.js">
-</script>
-</body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfbFj3x7Wjo4AnWFSJSWLLaArMrnEpZFw&callback=initMap"
+    async defer></script>
+  </body>
 </html>
-
-
-
