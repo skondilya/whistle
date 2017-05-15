@@ -30,8 +30,8 @@ function myMap(lat, long) {
        center: new google.maps.LatLng(lat,long),
        zoom: 1000,
        mapTypeId: google.maps.MapTypeId.HYBRID
-}
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 }
 getLocation();
