@@ -34,25 +34,32 @@
     </ul>
   </div>
 </nav>
-<h1>Timer</h1>
-  
-<h1 id="time"></h1>
+
+<section class="row wrap">
+<h1>Timer: <Span id="time"></Span></h1>
+<h4>Enter the estimated time of your journey here:</h4>
 <form role="form">
 
+<div class="col-md-6">
   <div class="form-group">
-    <label for="reserve-mintues">hours</label>
+    <label for="reserve-mintues">HOURS</label>
     <input type="number" class="form-control" id="hours">
   </div>
+</div>
 
+<div class="col-md-6">
   <div class="form-group">
-    <label for="reserve-secs">mintues</label>
+    <label for="reserve-secs">MINTUES</label>
     <input type="number" class="form-control" id="mintues">
   </div>
+</div>
 
 </form>
-<button id="start">start</button>
-<button id="stop">stop</button>
 
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+
+</section>
 
 <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
