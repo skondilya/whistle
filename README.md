@@ -31,9 +31,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Louise Nyambati** - *API Development*
+* **Louise Nyambati** - *API Development/Front-End Design/Back-End*
 * **Michael Weaver** - *Front-End Design/Back-End (Timer.js)*
-* **Shreya Kondilya** - *Database Interactions*
+* **Shreya Kondilya** - API Development/Front-End Design/Back-End*
 * **Zachary Keeshin** - *User Authentication*
 
 
