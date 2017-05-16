@@ -32,7 +32,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 * **Louise Nyambati** - *API Development*
-* **Michael Weaver** - *Front-End Design*
+* **Michael Weaver** - *Front-End Design/Back-End (Timer.js)*
 * **Shreya Kondilya** - *Database Interactions*
 * **Zachary Keeshin** - *User Authentication*
 
