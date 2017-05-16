@@ -3,7 +3,6 @@
 This application allows you to press a single button when you are in an emergency and alert your friends
 in the area. This app uses HTML5/CSS3, JavaScript, Express, Body-Parser, and many other technologies, and we think that it would be best used on a mobile device. It was built over the course of roughly two weeks by students at the Northwestern Coding Boot Camp.
 
-
 ### Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -19,8 +18,8 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Hello](https://maven.apache.org/) - Dependency Management
+* [Express](https://expressjs.com/) - Used to interact with the database
 
 ## Contributing
 
@@ -38,7 +37,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Zachary Keeshin** - *User Authentication*
 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/LouiseNyambati/whistle/contributors) who participated in this project.
 
 ## License
 
