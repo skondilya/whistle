@@ -22,18 +22,26 @@ function errorfn()
   console.log("Users location cant be traced");
 }
 
-
-function myMap(lat, long) {
-  console.log("the latitude is " + lat);
-  console.log("the longitude is " + long);
-   var mapOptions = {
-       center: new google.maps.LatLng(lat,long),
-       zoom: 1000,
-       mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+function myMap(lat,long) {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(lat,long); 
+  var mapOptions = {center: myCenter, zoom: 800};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
 }
+
 getLocation();
+
+ //  $(".alertimg").on("click", function(event) {
+      
+ // $("#resultsModal").modal();
+
+ //      });
+
+
 
 });
