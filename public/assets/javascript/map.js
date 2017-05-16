@@ -36,12 +36,6 @@ function myMap(lat,long) {
 
 getLocation();
 
- //  $(".alertimg").on("click", function(event) {
-      
- // $("#resultsModal").modal();
-
- //      });
-
-
+$("#resultsModal").modal();
 
 });
