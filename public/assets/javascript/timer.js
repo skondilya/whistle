@@ -22,7 +22,7 @@ $(document).ready(function(){
       var min = $("#mintues").val().trim();
       console.log(hour);
       console.log(min);
-      var timeEntered = ((hour*60*60)+ (min*60));  
+      var timeEntered = ((hour*60*60)+ (min*60));
       time.push(timeEntered);
     });
     display = document.querySelector('#time');
