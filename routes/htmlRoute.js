@@ -30,6 +30,7 @@ res.sendFile(path.join(__dirname, "/../public/contact.html"));
 
           app.get("/timer", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/timer.html"));
+    //res.sendFile(path.join(__dirname, "/../public/assets/project.css"));
   });
 
   // // If no matching route is found default to home
