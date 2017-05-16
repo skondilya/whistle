@@ -1,15 +1,8 @@
-# Whistle
+# Project Title
 
-This assignment displays working knowledge of two NPM packages (express & mysql)
-and also the process of communicating with a database. The user interface takes place
-entirely inside of the console, and it emulates the process of querying the Google Maps API
-to return the user's location and send that to up to five friends.
+One Paragraph of project description goes here
 
-In order to download and run this program on your machine, you must run "npm install". This will ensure
-that all of the correct modules are installed. Please contact the development team if there are 
-any other issues or changes that you'd like to see. Thanks!
-
-## Screenshots of Functionality
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -18,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-npm install
+Give examples
 ```
 
 ### Installing
