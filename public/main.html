@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Whistle</title>
-  <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfbFj3x7Wjo4AnWFSJSWLLaArMrnEpZFw&myMap&initMap">
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<link rel="stylesheet" href="assets/project.css" type="text/css" />
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery.js">
-    </script>
+    <script type="text/javascript" src="assets/javascript/project.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -36,7 +36,7 @@
 <div class="col-md-6">
 	<div class="sos">
 	<h1>Alert your friends</h1>
-		<button><img src="./assets/images/help-button.png" alt="Help Button" class="alertimg"></button>
+		<a href="map.html"><button><img src="./assets/images/help-button.png" alt="Help Button" class="alertimg" data-target="#resultsModal"></button></a>
 	</div>
 </div>
 <div class="col-md-6">
@@ -55,5 +55,24 @@
       </p>
     </footer>
     <!-- End of footer -->
+
+      <div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Sending Location</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="name"></h2>
+          <img id="map" src="" alt="mylocation">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Stop</button>
+        </div>
+      </div>
+
 </body>
 </html>
