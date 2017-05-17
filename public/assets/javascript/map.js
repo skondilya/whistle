@@ -38,4 +38,5 @@ getLocation();
 
 $("#resultsModal").modal();
 
+
 });
