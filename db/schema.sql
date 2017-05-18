@@ -2,7 +2,7 @@ CREATE DATABASE whistle;
 
 USE whistle;
 
-CREATE TABLE 'contacts' (
+CREATE TABLE contacts (
 	id INTEGER NOT NULL AUTO_INCREMENT,
 	name VARCHAR (255) NOT NULL,
 	your_name VARCHAR (255) NOT NULL,

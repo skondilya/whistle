@@ -19,14 +19,5 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
-connection.query("SELECT * FROM contacts", function(err, res) {
-	console.log("firing");
-	console.log(res);
-})
-
-
-
-
-
 // Export connection for our ORM to use.
 module.exports = connection;
