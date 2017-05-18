@@ -24,8 +24,8 @@ function errorfn()
 
 function myMap(lat,long) {
   var mapCanvas = document.getElementById("map");
-  var myCenter = new google.maps.LatLng(lat,long); 
-  var mapOptions = {center: myCenter, zoom: 800};
+  var myCenter = new google.maps.LatLng(lat,long);
+  var mapOptions = {center: myCenter, zoom: 700};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
@@ -41,13 +41,13 @@ function sendMail() {
             + "&body=" + escape("Hey! Reach me at this location.I think i need your help.")
            //+ escape(document.getElementById('myText').value)
     ;
- 
+
    window.location.href = link;
  }
 
 $(".policeimg").on("click", function() {
     console.log("Send Email Button called");
-    // $.get("/api/email");  
+    // $.get("/api/email");
     sendMail({
          from: 'shreyakondilya@outlook.com',
          to: 'skondilya@gmail.com',
