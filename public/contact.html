@@ -14,10 +14,13 @@
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery.js">
   </script>
+
+  <script type="text/javascript" src="/assets/javascript/contact.js"></script>
+
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="/main">Whistle</a>
@@ -39,15 +42,18 @@
         <section class="row">
 		<div class="col-md-2"></div>
         <div class="col-md-8">
+            
             <form class="contact-form">
               <h1 class="contact-form-header">Emergency Contact details</h1>
               <hr class="contact-hr"/>
               <div class="form-group">
-            <label class="label-name" for="name">Name</label>
+            <label class="label-username" for="name">Name</label>
             <input type="text" id="name_input" name="user_name" />
         </div>
 
         <div class="form-group">
+            <label class="label-name" for="mail">Your name</label>
+            <input type="text" id="your_name" name="your_name" />
             <label class="label-mail" for="mail">E-mail</label>
             <input type="email" id="mail_input" name="user_mail" />
         </div>
@@ -64,6 +70,8 @@
         </p>
       </footer>
       <!-- End of footer -->
+
+
 
 </body>
 </html>
