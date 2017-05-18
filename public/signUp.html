@@ -36,26 +36,30 @@
 </nav>
 
 <section class ="wrapSign">
-<form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="./assets/images/avatar.png" alt="Avatar" class="avatar">
-  </div>
+<h2>Signup Form</h2>
 
+<form action="/action_page.php">
   <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label><b>Email</b></label>
+    <br>
+    <input type="text" placeholder="Enter Email" name="email" required>
     <br>
     <label><b>Password</b></label>
+    <br>
     <input type="password" placeholder="Enter Password" name="psw" required>
     <br>
-    <button type="submit" class="login">Login</button>
-  </div>
+    <label><b>Repeat Password</b></label>
+    <br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-  <div class="container">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
   </div>
 </form>
 </section>
+
   <!-- Start of footer -->
       <footer class="footer navbar-fixed-bottom">
         <div class="two-toned-footer-color"></div>

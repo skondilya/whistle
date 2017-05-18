@@ -35,11 +35,11 @@ function myMap(lat,long) {
 }
 
 function sendMail() {
- var link = "mailto:skondilya@gmail.com"
+ var link = "mailto:(document.getElementById('email').value)"
          //+ "?cc=myCCaddress@example.com"
             + "&subject=" + escape("I think I am in trouble")
             + "&body=" + escape("Hey! Reach me at this location.I think i need your help.")
-           //+ escape(document.getElementById('myText').value)
+            + escape(document.getElementById('myLocation').value)
     ;
 
    window.location.href = link;

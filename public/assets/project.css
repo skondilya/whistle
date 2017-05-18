@@ -4,14 +4,13 @@ body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
-.wrapAbt {
-  width: 960px;
-  height: auto;
+.wrapSign {
   box-sizing: border-box;
-  margin:auto;
-  background-color: lightgrey;
-  font-size: 30px;
+  font-size: 20px;
+  background-color:white;
   padding: 20px;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .safety-image{
@@ -30,24 +29,15 @@ body {
   height: 60px;
  }
 
-.alertimg{
+.alertimg,.policeimg{
 	width: 228px;
 	height: 228px;
 }
 
-.policeimg{
-	width: 228px;
-	height: 228px;
-}
-.police{
+.police, .sos{
 	margin: auto;
-    width: 40%;
-    padding: 10px;
-}
-.sos{
-	margin: auto;
-    width: 40%;
-    padding: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 h1{
@@ -62,21 +52,11 @@ h1{
 	background-color: white;
 }
 
-.wrap{
-	width:960px;
-	margin:50px auto;
-}
-
-#mintues, #hours{
-	width:40%;
-	padding:10px;
-	margin:auto;
-}
-
 /* Full-width inputs */
 input[type=text], input[type=password],input[type=number],input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
+    width: 50%;
+    font-size: 18px;
+    padding: 10px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -84,11 +64,11 @@ input[type=text], input[type=password],input[type=number],input[type=email] {
 }
 
 /* Set a style for all buttons */
-.login, #start, #stop,.cancelbtn,.submit-btn {
+.login, #start, #stop,.cancelbtn,.submit-btn,.signupbtn{
     background-color:#00bfff;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 10px 10px;
+    margin: 5px;
     border: none;
     cursor: pointer;
     width: 15%;
@@ -101,7 +81,6 @@ button:hover {
 
 /* Extra style for the cancel button (red) */
 .cancelbtn {
-    padding: 10px 18px;
     background-color: #f44336;
 }
 
@@ -115,11 +94,6 @@ button:hover {
 .avatar {
     width: 10%;
     border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
-    padding: 16px;
 }
 
 /* The "Forgot password" text */
@@ -142,6 +116,7 @@ span.psw {
 .navbar{
   background-color: greenyellow;
   color: #00bfff;
+  font-weight: bold;
 }
 h3{
   text-align: center;
