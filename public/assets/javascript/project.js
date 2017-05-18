@@ -6,13 +6,13 @@ function sendMail() {
             + "&body=" + escape("Hey! Reach me at this location.I think i need your help.")
            //+ escape(document.getElementById('myText').value)
     ;
- 
+
    window.location.href = link;
  }
 
 $(".policeimg").on("click", function() {
     console.log("Send Email Button called");
-    // $.get("/api/email");  
+    // $.get("/api/email");
     sendMail({
          // from: 'shreyakondilya@outlook.com',
          // to: 'skondilya@gmail.com',
