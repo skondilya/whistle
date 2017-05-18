@@ -8,7 +8,6 @@ body {
   width: 960px;
   box-sizing: border-box;
   margin: 2.5% auto;
-  background-color: darkgrey;
   font-size: 50px;
   padding: 35px;
 }
@@ -16,6 +15,8 @@ body {
 .safety-image{
   width:330px;
   height: 330px;
+  margin-left: 300px
+
 }
 .footer {
   position: absolute;
@@ -54,7 +55,7 @@ h1{
 #map {
 	width: 100%;
 	height: 400px;
-	background-color: grey;
+	background-color: white;
 }
 
 .wrap{
