@@ -10,7 +10,7 @@ function sendMail() {
    window.location.href = link;
  }
 
-$(".policeimg").on("click", function() {
+$(".alertimg").on("click", function() {
     console.log("Send Email Button called");
     // $.get("/api/email");
     sendMail({
