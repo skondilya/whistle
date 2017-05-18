@@ -67,7 +67,7 @@ input[type=text], input[type=password],input[type=number],input[type=email] {
 
 /* Set a style for all buttons */
 .login, #start, #stop,.cancelbtn,.submit-btn {
-    background-color:cornflowerblue;
+    background-color:#00bfff;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -135,4 +135,20 @@ h3{
 }
 .navbar{
   background-color: greenyellow;
+  color: #00bfff;
+}
+
+h4 {
+  text-align: center;
+  font-weight: bold;
+  color:#00bfff;
+}
+h5{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.col-md-8{
+  margin-left: 160px;
+  text-align: center;
 }
