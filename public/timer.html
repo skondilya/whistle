@@ -10,15 +10,14 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Optional theme -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
      <link rel="stylesheet" href="./assets/project.css" type="text/css" />
-
-     <!-- JQuery -->
-     <script src="https://code.jquery.com/jquery.js">
-     </script>
      <script type="text/javascript" src="assets/javascript/timer.js"></script>
 
  </head>
@@ -44,7 +43,7 @@
  </nav>
 
  <section class="row wrap">
- <h1>Timer: <Span id="time"></Span></h1>
+ <h1>Timer: <Span id="time"></Span></h1></h1>
  <h4>Enter the estimated time of your journey here:</h4><br>
  <form role="form">
 
@@ -64,7 +63,7 @@
 
  </form>
 
- <button id="start">Start</button>
+ <button id="start" data-target="#resultsModal">Start</button>
  <button id="stop">Stop</button>
 
  </section>
@@ -75,5 +74,26 @@
        </p>
       </footer>
       <!-- End of footer -->
+
+      <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"><strong>Sending Location to your friend</strong></h4>
+            </div>
+            <!-- <div class="modal-body">
+              <p id="name">Click the button below to stop</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" id="sendMail" data-dismiss="modal">OK</button>
+              <button type="button" class="btn btn-danger" id="stopMail" data-dismiss="modal">Stop</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
   </body>
 </html>
