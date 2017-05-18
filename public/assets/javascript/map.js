@@ -34,9 +34,13 @@ function myMap(lat,long) {
   marker.setMap(map);
 }
 
+$("#sendMail").on("click", function() {
+    console.log("Send Email Button called");
+    $.get("/api/email");
+});
+
+
 getLocation();
-
 $("#resultsModal").modal();
-
 
 });
