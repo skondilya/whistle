@@ -15,18 +15,12 @@ body {
 }
 
 .safety-image{
-  margin-right: 35px;
   float: left;
   margin: 2.5% auto;
+  margin-right: 25px;
   font-size: 50px;
-
 }
 
-.safety-image{
-  width:330px;
-  height: 330px;
-  margin-left: 300px;
-}
 
 .footer {
   position: absolute;
