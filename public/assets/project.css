@@ -4,6 +4,19 @@ body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
+.wrapAbt {
+  width: 960px;
+  box-sizing: border-box;
+  margin: 2.5% auto;
+  background-color: darkgrey;
+  font-size: 50px;
+  padding: 35px;
+}
+
+.safety-image{
+  width:330px;
+  height: 330px;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -126,13 +139,7 @@ h2{
   text-align: center;
   font-weight: bold;
 }
-h3{
-  font-size: 40px;
-  border-style: solid;
-  padding: 35px;
-  border-width: 5px;
 
-}
 .navbar{
   background-color: greenyellow;
 }

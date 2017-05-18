@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	// Function for count down timer, ends game once time runs out
+	var intervalId = 0;
+	var time =0;
 	var stopwatch = {
-		intervalId : null,
 		startTimer : function(duration, display) {
 			var timer = duration, minutes, seconds;
 			intervalId = setInterval(function () {
@@ -13,55 +14,46 @@ $(document).ready(function(){
 
 		  	display.text(minutes + ":" + seconds);
 
+		  	function sendMail() {
+				var link = "mailto:skondilya@gmail.com"
+		     	//+ "?cc=myCCaddress@example.com"
+		        + "&subject=" + escape("I think I am in trouble")
+		        + "&body=" + escape("Hey! Reach me at this location.I think i need your help.");
+		       	//+ escape(document.getElementById('myText').value)
+																													
+				window.location.href = link;
+			}
+
 		  	if (--timer < 0) {
-		      clearInterval(intervalId);
+				clearInterval(intervalId);
+				sendMail();
+				$("#resultsModal").modal();
+				$("#time").empty();
 		  	}
   			}, 1000);
 		},
 
-		stop: function(){
+		reset: function(){
 		// Use clearInterval to stop the count.
-		clearInterval(intervalId);
+		$("#time").empty();
+		clearInterval(intervalId);   
 		}
 
 	}
 
-	var time = [];
-    $("#start").on("click", function() {
+$("#start").on("click", function() {
 
-      event.preventDefault();
-      var hour = $("#hours").val().trim();
-      var min = $("#mintues").val().trim();
-      var timeEntered = ((hour*60*60)+ (min*60));
-      time.push(timeEntered);
-
-      	setTimeout(function(){
-      	$("#resultsModal").modal();
-		function sendMail() {
-			var link = "mailto:skondilya@gmail.com"
-	     	//+ "?cc=myCCaddress@example.com"
-	        + "&subject=" + escape("I think I am in trouble")
-	        + "&body=" + escape("Hey! Reach me at this location.I think i need your help.");
-	       	//+ escape(document.getElementById('myText').value)
-																												
-			window.location.href = link;
-		}
-
-		sendMail();
-		console.log("time up!")
-	 },time*1000);
-      	display = $("#time")
-		stopwatch.startTimer(time, display);
-    });
-
-// function emptyDivs () {
-//   $('#hours').empty();
-//   $('#mintues').empty();
-//   time=[];
-// }
+  event.preventDefault();
+  var hour = $("#hours").val().trim();
+  var min = $("#mintues").val().trim();
+  var timeEntered = ((hour*60*60)+ (min*60));
+  time= timeEntered;
+  display = $("#time")
+  stopwatch.startTimer(time, display);
+});
 
 $("#stop").click(function () {
-   stopwatch.stop();
+   stopwatch.reset();
 });
 	
 });
