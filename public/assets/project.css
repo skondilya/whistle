@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   margin: 2.5% auto;
   font-size: 50px;
-  padding: 35px;
+
 }
 
 .safety-image{
@@ -144,6 +144,10 @@ h2{
 .navbar{
   background-color: greenyellow;
   color: #00bfff;
+}
+h3{
+  text-align: center;
+  
 }
 
 h4 {
