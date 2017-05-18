@@ -11,10 +11,10 @@ $(document).ready(function(){
       };
 
       $.post("/add", newCharacter)
-      console.log('posting')
+      // console.log('posting')
       .done(function(data) {
-        console.log(data);
-        alert("Adding character...");
+        // console.log(data);
+        // alert("Adding character...");
       });
     });
   
