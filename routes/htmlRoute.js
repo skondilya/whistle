@@ -32,5 +32,8 @@ module.exports = function(app) {
       res.sendFile(path.join(__dirname, "/../public/timer.html"));
   });
 
+  app.post("/add", function(req, res) {
+    console.log(req.body)
+  });
 
 };
