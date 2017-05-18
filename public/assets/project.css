@@ -6,17 +6,19 @@ body {
 
 .wrapAbt {
   width: 960px;
+  height: auto;
   box-sizing: border-box;
-  margin: 2.5% auto;
-  background-color: darkgrey;
-  font-size: 50px;
-  padding: 35px;
+  margin:auto;
+  background-color: lightgrey;
+  font-size: 30px;
+  padding: 20px;
 }
 
 .safety-image{
-  width:330px;
-  height: 330px;
+  margin-right: 35px;
+  float: left;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -132,12 +134,6 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
-}
-h2{
-  font-size: 90px;
-  color: red;
-  text-align: center;
-  font-weight: bold;
 }
 
 .navbar{
