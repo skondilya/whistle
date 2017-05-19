@@ -45,9 +45,9 @@ module.exports = function(app) {
       res.sendFile(path.join(__dirname, "/../public/signUp.html"));
   });
 
-  // app.post("/", function(req, res) {
-  //   console.log(req.body);
-  //   console.log("hello world");
-  // });
+  app.post("/", function(req, res) {
+    console.log(req.body);
+    console.log("hello world");
+  });
 
 };
