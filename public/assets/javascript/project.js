@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-$(#myLocation).text();
+//$(#myLocation).text();
 
 function sendMail() {
  var link = "mailto:(document.getElementById('email').value)"
