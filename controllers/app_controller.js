@@ -5,18 +5,6 @@ var router = express.Router();
 // Import the model (cat.js) to use its database functions.
 var whistle = require("../models/whistle.js");
 
-// Create all our routes and set up logic within those routes where required.
-/*
-router.get("/", function(req, res) {
-  contacts.selectAll(function(data) {
-    var hbsObject = {
-      contacts: data
-    };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
-  });
-});
-*/
 router.post("/api/register", function(req, res) {
   console.log("Inserting user information");
   whistle.insertOne(
@@ -29,6 +17,19 @@ router.post("/api/register", function(req, res) {
   });
   console.log("Inserted user information");
 });
+
+// Create all our routes and set up logic within those routes where required.
+/*
+router.get("/", function(req, res) {
+  contacts.selectAll(function(data) {
+    var hbsObject = {
+      contacts: data
+    };
+    console.log(hbsObject);
+    res.render("index", hbsObject);
+  });
+});
+*/
 
 console.log("Loaded App Controller.Js");
 // Export routes for server.js to use.
