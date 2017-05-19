@@ -46,7 +46,6 @@ $(document).ready(function(){
     }
 
     // Function for count down timer, ends game once time runs out
-    var intervalId = 0;
     var timer = 5;
     var stopwatch = {
       startTimer : function() {
@@ -70,7 +69,6 @@ $(document).ready(function(){
         }, 1000);
       },
       reset: function(){
-      // Use clearInterval to stop the count.
       clearInterval(intervalId);   
       }
 
