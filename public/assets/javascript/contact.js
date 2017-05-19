@@ -11,13 +11,6 @@ $(document).ready(function(){
         EmergencyContact_name_two: $("#e2_input").val().trim(),
         EmergencyContact_email_two: $("#e2mail_input").val().trim()
       };
-
-      $.post("/add", newContact)
-      
-      .done(function(data) {
-
-
-      });
     });
   
   });
