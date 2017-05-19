@@ -23,6 +23,6 @@ var whistle = {
 
 };
 
-
+console.log("Loaded Whistle.Js");
 // Export the database functions for the controller (catsController.js).
 module.exports = whistle;

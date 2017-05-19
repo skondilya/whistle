@@ -6,38 +6,30 @@ var router = express.Router();
 var whistle = require("../models/whistle.js");
 
 // Create all our routes and set up logic within those routes where required.
+/*
 router.get("/", function(req, res) {
   contacts.selectAll(function(data) {
     var hbsObject = {
-      burgers: data
+      contacts: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
-
-router.post("/", function(req, res) {
-  contacts.insertOne([
-    "burger_name"
-  ], [
-    req.body.burger_name
-  ], function() {
+*/
+router.post("/api/register", function(req, res) {
+  console.log("Inserting user information");
+  whistle.insertOne(
+  ["your_name", "EmergencyContact_name_one","EmergencyContact_email_one",
+  "EmergencyContact_name_two", "EmergencyContact_email_two"], 
+  [req.body.your_name,req.body.EmergencyContact_name_one, req.body.EmergencyContact_email_one,
+  req.body.EmergencyContact_name_two, req.body.EmergencyContact_email_two], 
+  function() {
     res.redirect("/");
   });
+  console.log("Inserted user information");
 });
 
-router.put("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
-
-  contacts.updateOne({
-    devoured : req.body.devoured 
-  }, condition, function() {
-    res.redirect("/");
-  });
-});
-
-
+console.log("Loaded App Controller.Js");
 // Export routes for server.js to use.
 module.exports = router;

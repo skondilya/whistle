@@ -20,6 +20,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoute")(app);
 
 // Import routes and give the server access to them.
+console.log("Starting Load App Controller..");
 var routes = require("./controllers/app_controller.js");
 app.use("/", routes);
 
