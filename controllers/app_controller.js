@@ -24,28 +24,28 @@ router.get("/timer", function(req, res) {
   whistle.selectAll(function(data) {
     ["your_name", "EmergencyContact_name_one","EmergencyContact_email_one",
     "EmergencyContact_name_two", "EmergencyContact_email_two"],  
-    var hbsObject = {
-      contacts: data
-    };
+    // var hbsObject = {
+    //   contacts: data
+    // };
     console.log(hbsObject);
     res.send(EmergencyContact_name_one,EmergencyContact_email_one);
     res.render("/timer", hbsObject);
   });
 });
 
-router.get("/map", function(req, res) {
+// router.get("/map", function(req, res) {
 
-  var condition = "id = " + req.params.id;
-  whistle.selectColumn(function(data) {
-  [
-    "EmergencyContact_name_two", "EmergencyContact_email_two"],  
-  ], [
-    req.body.EmergencyContact_name_two,req.body.EmergencyContact_email_two
-  ],condition,function(){
-    console.log(hbsObject);
-    res.render("/map", hbsObject);
-  };
-});
+//   var condition = "id = " + req.params.id;
+//   whistle.selectColumn(function(data) {
+//   [
+//     "EmergencyContact_name_two", "EmergencyContact_email_two"],  
+//   ], [
+//     req.body.EmergencyContact_name_two,req.body.EmergencyContact_email_two
+//   ],condition,function(){
+//     console.log(hbsObject);
+//     res.render("/map", hbsObject);
+//   };
+// });
 
 
 console.log("Loaded App Controller.Js");
