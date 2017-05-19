@@ -10,7 +10,7 @@ var whistle = {
     });
   },
 
-	selectAll: function(cb) {
+	selectColumn: function(table,cols,condition,cb) {
     orm.selectAll("contacts", function(res) {
       cb(res);
     });
