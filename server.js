@@ -19,6 +19,10 @@ app.use(express.static(process.cwd() + "/public"));
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoute")(app);
 
+// Import routes and give the server access to them.
+var routes = require("./controllers/app_controller.js");
+app.use("/", routes);
+
 // LISTENER: The below code effectively "starts" our server
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
