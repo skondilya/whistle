@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-
+    var lat="";
+    var long = "";
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(getPosition, errorfn);
@@ -10,9 +11,9 @@ $(document).ready(function(){
     };
 
     function getPosition(position) {
-        var lat = position.coords.latitude ;
+        lat = position.coords.latitude ;
         console.log(lat);
-        var long = position.coords.longitude;
+        long = position.coords.longitude;
         console.log(long);
         myMap(lat, long);
     };
@@ -56,8 +57,8 @@ $(document).ready(function(){
           var link = "mailto:skondilya@gmail.com"
             //+ "?cc=myCCaddress@example.com"
               + "&subject=" + escape("I think I am in trouble")
-              + "&body=" + escape("Hey! Reach me at this location.I think i need your help.");
-              //+ escape(document.getElementById('myText').value)
+              + "&body=" + escape("Hey! I need your help.Here is my location  ")
+              + escape("https://www.google.com/maps/@"+lat+","+long+",17z");
                                                             
           window.location.href = link;
         }
@@ -79,7 +80,7 @@ $(document).ready(function(){
     });
 
     getLocation();
-    $("#resultsModal").modal();
     stopwatch.startTimer();
+    $("#resultsModal").modal();
 
 });

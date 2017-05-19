@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-//$(#myLocation).text();
+//$(.myLocation).text("https://www.google.com/maps/@"+lat+","+long+",17z");
+//https://www.google.com/maps/@42.0573897,-87.6724646,17z
 
 function sendMail() {
  var link = "mailto:(document.getElementById('email').value)"
@@ -15,15 +16,7 @@ function sendMail() {
 
 $(".alertimg").on("click", function() {
     console.log("Send Email Button called");
-    // $.get("/api/email");
     sendMail({
-         // from: 'shreyakondilya@outlook.com',
-         // to: 'skondilya@gmail.com',
-         // subject: 'MailComposer sendmail',
-         // html: 'Mail of test sendmail '
-         // }, function (err, reply) {
-         // console.log(err && err.stack)
-         // console.dir(reply)
     });
 });
 
