@@ -1,6 +1,6 @@
 # Whistle
 
-This application allows you to press a single button when you are in an emergency and alert your friends
+Whistle lets you to press a single button when you are in an emergency and alert your friends
 in the area. This app uses HTML5/CSS3, JavaScript, Express, Body-Parser, and many other technologies, and we think that it would be best used on a mobile device. It was built over the course of roughly two weeks by students at the Northwestern Coding Boot Camp.
 
 ### Getting Started
