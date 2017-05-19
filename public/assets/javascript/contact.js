@@ -5,9 +5,11 @@ $(document).ready(function(){
       event.preventDefault();
 
       var newContact = {
-        name: $("#name_input").val().trim(),
-        your_name: $("#your_name").val().trim(),
-        email: $("#mail_input").val().trim(),
+        your_name: $("#name_input").val().trim(),
+        EmergencyContact_name_one: $("#e1_input").val().trim(),
+        EmergencyContact_email_one: $("#e1mail_input").val().trim(),
+        EmergencyContact_name_two: $("#e2_input").val().trim(),
+        EmergencyContact_email_two: $("#e2mail_input").val().trim()
       };
 
       $.post("/add", newContact)
@@ -18,5 +20,4 @@ $(document).ready(function(){
       });
     });
   
-
   });
