@@ -1,27 +1,6 @@
 
 $(document).ready(function(){
-    var lat="";
-    var long = "";
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(getPosition, errorfn);
-        } else {
-            console.log("Geolocation is not supported by this browser.");
-        }
-    };
-
-    function getPosition(position) {
-        lat = position.coords.latitude ;
-        console.log(lat);
-        long = position.coords.longitude;
-        console.log(long);
-        myMap(lat, long);
-    };
-
-    function errorfn()
-    {
-      console.log("Users location cant be traced");
-    };
+    
 
     function myMap(lat,long) {
       var mapCanvas = document.getElementById("map");
@@ -40,35 +19,25 @@ $(document).ready(function(){
     var stopwatch = {
       startTimer : function() {
           intervalId = setInterval(function() {
-                  display = $("#time")
-                  display.text(timer);
-                  function sendMail() {
-                      $.get("/api/contacts", function(data){
-                          if (data.length == 1) {
-                            var link = "mailto:"+ data[0].EmergencyContact_email_one
-                            + "?cc=" + data[0].EmergencyContact_email_two
-                            + "&subject=" + escape("I think I am in trouble")
-                            + "&body=" + escape("Hey! I need your help.Here is my present location  ")
-                            + escape("https://www.google.com/maps/@"+lat+","+long+",17z");
-                            window.location.href = link;
-                          }
-                      });                                                                       
-                  }
-                  if (--timer < 0) {
-                    clearInterval(intervalId);
-                    sendMail();
-                  }
+              display = $("#time")
+              display.text(timer);
+              if (--timer < 0) {
+                clearInterval(intervalId);
+                sendMail();
+              }
           }, 1000);
       },
       reset: function(){
-                clearInterval(intervalId);   
-            }
+              clearInterval(intervalId);   
+      }
   }
 
     $("#stopMail").click(function () {
        stopwatch.reset();
     });
 
+    //setting up the global variable
+    mapCallback = myMap;
     getLocation();
     stopwatch.startTimer();
     $("#resultsModal").modal();

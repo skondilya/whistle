@@ -13,16 +13,7 @@ $(document).ready(function(){
 		  	seconds = seconds < 10 ? "0" + seconds : seconds;
 
 		  	display.text(minutes + ":" + seconds);
-
-		  	function sendMail() {
-
-				var link = "mailto:skondilya@gmail.com"
-		     	//+ "?cc=myCCaddress@example.com"
-		     	+ "&subject=" + escape("I think I am in trouble")
-                + "&body=" + escape("Hey! Reach me at this location.I think i need your help.")													
-				window.location.href = link;
-			}
-
+		  	
 		  	if (--timer < 0) {
 				clearInterval(intervalId);
 				sendMail();
@@ -52,6 +43,8 @@ $("#start").on("click", function() {
 $("#stop").click(function () {
    	stopwatch.reset();
 });
+
+getLocation();
 	
 });
 
