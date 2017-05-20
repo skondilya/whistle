@@ -15,6 +15,7 @@ $(document).ready(function(){
 		  	display.text(minutes + ":" + seconds);
 
 		  	function sendMail() {
+
 				var link = "mailto:skondilya@gmail.com"
 		     	//+ "?cc=myCCaddress@example.com"
 		     	+ "&subject=" + escape("I think I am in trouble")
@@ -32,7 +33,6 @@ $(document).ready(function(){
 		},
 
 		reset: function(){
-		// Use clearInterval to stop the count.
 		$("#time").empty();
 		clearInterval(intervalId);   
 		}
@@ -40,25 +40,19 @@ $(document).ready(function(){
 	}
 
 $("#start").on("click", function() {
-
-  event.preventDefault();
-  var hour = $("#hours").val().trim();
-  var min = $("#mintues").val().trim();
-  var timeEntered = ((hour*60*60)+ (min*60));
-  time= timeEntered;
-  display = $("#time")
-  stopwatch.startTimer(time, display);
+	  event.preventDefault();
+	  var hour = $("#hours").val().trim();
+	  var min = $("#mintues").val().trim();
+	  var timeEntered = ((hour*60*60)+ (min*60));
+	  time= timeEntered;
+	  display = $("#time")
+	  stopwatch.startTimer(time, display);
 });
 
 $("#stop").click(function () {
-   stopwatch.reset();
+   	stopwatch.reset();
 });
 	
 });
 
 
-// function send() {
-//   setTimeout(function() {
-//     window.open("mailto:" + document.getElementById('email').value + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('message').value);
-//   }, 320);
-// }

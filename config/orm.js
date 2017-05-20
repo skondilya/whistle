@@ -33,7 +33,7 @@ var orm = {
   },
 
   deleteAll: function(tableInput, cb) {
-    var queryString = "DROP * FROM" + tableInput + ";";
+    var queryString = "delete FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;

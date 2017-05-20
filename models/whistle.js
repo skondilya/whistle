@@ -10,12 +10,12 @@ var whistle = {
     });
   },
 
-	selectAll: function(tableinput,cb) {
+	selectAll: function(cb) {
     orm.selectAll("contacts", function(res) {
       cb(res);
     });
   },
-  deleteAll: function(tableinput, cb) {
+  deleteAll: function(cb) {
     orm.deleteAll("contacts",function(res) {
       cb(res);
     });

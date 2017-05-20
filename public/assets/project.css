@@ -50,62 +50,62 @@ body {
 
 /* Full-width inputs */
 input[type=text], input[type=password],input[type=number],input[type=email] {
-    width: 50%;
-    font-size: 18px;
-    padding: 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  width: 50%;
+  font-size: 18px;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 .login, #start, #stop,.cancelbtn,.submit-btn,.signupbtn{
-    background-color:#00bfff;
-    color: white;
-    padding: 10px 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    width: 15%;
+  background-color:#00bfff;
+  color: white;
+  padding: 10px 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
 }
 
 /* Add a hover effect for buttons */
 button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* Extra style for the cancel button (red) */
 .cancelbtn {
-    background-color: #f44336;
+  background-color: #f44336;
 }
 
 /* Center the avatar image inside this container */
 .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
+  text-align: center;
+  margin: 24px 0 12px 0;
 }
 
 /* Avatar image */
 .avatar {
-    width: 10%;
-    border-radius: 50%;
+  width: 10%;
+  border-radius: 50%;
 }
 
 /* The "Forgot password" text */
 span.psw {
-    float: right;
-    padding-top: 16px;
+  float: right;
+  padding-top: 16px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
-        display: block;
-        float: none;
+      display: block;
+      float: none;
     }
     .cancelbtn {
-        width: 100%;
+      width: 100%;
     }
 }
 

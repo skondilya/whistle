@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-//$(.myLocation).text("https://www.google.com/maps/@"+lat+","+long+",17z");
-//https://www.google.com/maps/@42.0573897,-87.6724646,17z
-
 function sendMail() {
  var link = "mailto:(document.getElementById('email').value)"
          //+ "?cc=myCCaddress@example.com"
