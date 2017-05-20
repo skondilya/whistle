@@ -12,55 +12,56 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="assets/project.css" type="text/css" />
-    <script type="text/javascript" src="assets/javascript/project.js"></script>
+	<link rel="stylesheet" href="assets/project.css" type="text/css" />
+  <script type="text/javascript" src="assets/javascript/project.js"></script>
 </head>
+
 <body>
   <nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/main">Whistle</a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main">Whistle</a>
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contacts</a></li>
+        <li><a href="/timer">Get Me Home</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
+  </nav>
 
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contacts</a></li>
-      <li><a href="/timer">Get Me Home</a></li>
+  <section class ="wrapSign">
+    <section class="row">
+      <div class="col-md-6">
+      	<div class="sos">
+      	<h1><b>Send An Alert</b></h1>
+      		<a href="/map"><button><img src="./assets/images/help-button.png" alt="Help Button" class="alertimg" data-target="#resultsModal"></button></a>
+      	</div>
+      </div>
 
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+      <div class="col-md-6">
+      	<div class="police">
+      	<h1><b>Call 911</b></h1>
+      		<a href="/map"><button> <img src="assets/images/911-button.png" alt="Police Button" class="policeimg" data-target="#resultsModal"></button>
+      	</div>
+      </div>
 
-<section class ="wrapSign">
-<section class="row">
-<div class="col-md-6">
-	<div class="sos">
-	<h1><b>Send An Alert</b></h1>
-		<a href="/map"><button><img src="./assets/images/help-button.png" alt="Help Button" class="alertimg" data-target="#resultsModal"></button></a>
-	</div>
-</div>
-<div class="col-md-6">
-	<div class="police">
-	<h1><b>Call 911</b></h1>
-		<button> <img src="assets/images/911-button.png" alt="Police Button" class="policeimg"></button>
-	</div>
-</div>
-
-</section>
-</section>
-<!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
+    </section>
+  </section>
+  <!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
         &copy; Copyright Whistle 2017
       </p>
-    </footer>
-    <!-- End of footer -->
-
+  </footer>
+  <!-- End of footer -->
 
 </body>
 </html>

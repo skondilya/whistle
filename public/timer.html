@@ -1,12 +1,10 @@
-<!-- Students: Our work lies in the js file. -->
-
 <!DOCTYPE html>
 
 <html lang="en">
  <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Timer</title>
+    <title>Timer</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -20,79 +18,79 @@
      <link rel="stylesheet" href="./assets/project.css" type="text/css" />
      <script type="text/javascript" src="assets/javascript/timer.js"></script>
 
- </head>
+</head>
  <body>
-   <nav class="navbar">
-   <div class="container-fluid">
-     <div class="navbar-header">
-       <a class="navbar-brand" href="/main">Whistle</a>
-    </div>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+         <a class="navbar-brand" href="/main">Whistle</a>
+      </div>
 
-    <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
 
        <li><a href="/about">About</a></li>
        <li><a href="/contact">Contacts</a></li>
        <li><a href="/timer">Get Me Home</a></li>
 
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
        <li><a href="/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-     </ul>
-   </div>
- </nav>
+      </ul>
+    </div>
+  </nav>
 
-<section class ="wrapSign">
- <section class="row wrap">
- <h5>Timer <Span id="time"></Span></h5></h5>
- <h4>Enter the estimated time of your journey here:</h4><br>
- <form role="form">
+  <section class ="wrapSign">
+   <h5>Timer <Span id="time"></Span></h5></h5>
+   <h4>Enter the estimated time of your journey here:</h4><br>
 
- <div class="col-md-6">
-   <div class="form-group">
-     <label for="reserve-mintues">HOURS</label>
-     <input type="number" class="form-control" id="hours">
-   </div>
- </div>
+    <form role="form">
 
- <div class="col-md-6">
-   <div class="form-group">
-     <label for="reserve-secs">MINTUES</label>
-     <input type="number" class="form-control" id="mintues">
-   </div>
- </div>
+       <div class="col-md-6">
+         <div class="form-group">
+           <label for="reserve-mintues">HOURS</label>
+           <input type="number" class="form-control" id="hours">
+         </div>
+       </div>
 
- </form>
-<div class="col-md-8">
- <button id="start" data-target="#resultsModal">Start</button>
- <button id="stop">Stop</button>
-</div>
- </section>
- </section>
+       <div class="col-md-6">
+         <div class="form-group">
+           <label for="reserve-secs">MINTUES</label>
+           <input type="number" class="form-control" id="mintues">
+         </div>
+       </div>
+
+    </form>
+    
+    <div class="col-md-8">
+     <button id="start" data-target="#resultsModal">Start</button>
+     <button id="stop">Stop</button>
+    </div>
+
+  </section>
 
   <!-- Start of footer -->
-      <footer class="footer navbar-fixed-bottom">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-          &copy; Copyright Whistle 2017
-        </p>
-      </footer>
-      <!-- End of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Whistle 2017
+    </p>
+  </footer>
+  <!-- End of footer -->
 
 
-      <div id="resultsModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+  <div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title"><strong>Sending Location to your friend</strong></h4>
-            </div>
-
-          </div>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><strong>Sending Location to your friend</strong></h4>
         </div>
       </div>
+    </div>
+  </div>
 
-  </body>
+</body>
 </html>

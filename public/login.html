@@ -12,57 +12,59 @@
 
 		<link rel="stylesheet" href="assets/project.css" type="text/css" />
   <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.js">
-  </script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 <body>
   <nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/main">Whistle</a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main">Whistle</a>
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contacts</a></li>
+        <li><a href="/timer">Get Me Home</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
+  </nav>
 
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contacts</a></li>
-      <li><a href="/timer">Get Me Home</a></li>
+  <section class ="wrapSign">
+    <form action="/action_page.php">
+      <div class="imgcontainer">
+        <img src="./assets/images/avatar.png" alt="Avatar" class="avatar">
+      </div>
 
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+        <button type="submit" class="login">Login</button>
+      </div>
 
-<section class ="wrapSign">
-<form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="./assets/images/avatar.png" alt="Avatar" class="avatar">
-  </div>
+      <div class="container">
+        <button type="button" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </section>
 
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-    <br>
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br>
-    <button type="submit" class="login">Login</button>
-  </div>
-
-  <div class="container">
-    <button type="button" class="cancelbtn">Cancel</button>
-  </div>
-</form>
-</section>
   <!-- Start of footer -->
-      <footer class="footer navbar-fixed-bottom">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-          &copy; Copyright Whistle 2017
-        </p>
-      </footer>
-      <!-- End of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Whistle 2017
+    </p>
+  </footer>
+  <!-- End of footer -->
+  
 </body>
 </html>
