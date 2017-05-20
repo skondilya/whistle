@@ -10,13 +10,13 @@ var whistle = {
     });
   },
 
-	selectColumn: function(table,cols,condition,cb) {
+	selectAll: function(tableinput,cb) {
     orm.selectAll("contacts", function(res) {
       cb(res);
     });
   },
-  updateOne: function(objColVals, condition, cb) {
-    orm.updateOne("contacts", objColVals, condition, function(res) {
+  deleteAll: function(tableinput, cb) {
+    orm.deleteAll("contacts",function(res) {
       cb(res);
     });
   }

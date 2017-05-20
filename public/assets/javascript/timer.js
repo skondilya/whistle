@@ -17,10 +17,8 @@ $(document).ready(function(){
 		  	function sendMail() {
 				var link = "mailto:skondilya@gmail.com"
 		     	//+ "?cc=myCCaddress@example.com"
-		        + "&subject=" + escape("I think I am in trouble")
-		        + "&body=" + escape("Hey! Reach me at this location.I think i need your help.");
-		       	//+ escape(document.getElementById('myText').value)
-																													
+		     	+ "&subject=" + escape("I think I am in trouble")
+                + "&body=" + escape("Hey! Reach me at this location.I think i need your help.")													
 				window.location.href = link;
 			}
 

@@ -36,7 +36,7 @@
       </ul>
     </div>
   </nav>
-
+        
         <section class ="wrapSign">
 
         <form class="contact-form">
@@ -47,38 +47,56 @@
                 <input type="text" id="name_input" name="user_name" placeholder="name">
             </div>
 
-             <div class="form-group">
-                <label class="label-username" for="name">First emergency contact</label>
-                <input type="text" id="e1_input" name="e1_name" placeholder="first emergency contact name">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">Emergency Contact One</h4>
+              </div>
+              <div class="panel-body" id="tableSection">
+                <div class="form-group">
+                  <label class="label-username" for="name">name</label>
+                  <input type="text" id="e1_input" name="e1_name" placeholder="name">
+                </div>
+
+
+                <div class="form-group">
+                  <label class="label-mail" for="mail">e-mail</label>
+                  <input type="email" id="e1mail_input" name="e1_mail" placeholder="email">
+                </div>
+              </div>
             </div>
 
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Emergency Contact Two</h4>
+            </div>
+              <div class="panel-body" id="tableSection">
+                <div class="form-group">
+                  <label class="label-mail" for="mail">name</label>
+                  <input type="email" id="e2_input" name="e2_name" placeholder="name">
+                </div>
 
-            <div class="form-group">
-                <label class="label-mail" for="mail">Emergency contact e-mail</label>
-                <input type="email" id="e1mail_input" name="e1_mail" placeholder="first emergency contact email">
+                <div class="form-group">
+                    <label class="label-mail" for="mail">e-mail</label>
+                    <input type="email" id="e2mail_input" name="e2_mail" placeholder="email">
+                </div>
+              </div>
             </div>
 
-            <div class="form-group">
-                <label class="label-mail" for="mail">Second emergency contact</label>
-                <input type="email" id="e2_input" name="e2_name" placeholder="second emergency contact name">
-            </div>
-
-            <div class="form-group">
-                <label class="label-mail" for="mail">Emergency contact e-mail</label>
-                <input type="email" id="e2mail_input" name="e2_mail" placeholder="second emergency contact email">
-              <button class="submit-btn">Submit</button>
-            </div>
-
+                <button class="submit-btn">Submit</button>
             </form>
         </section>
-        <!-- Start of footer -->
-            <footer class="footer navbar-fixed-bottom">
-              <div class="two-toned-footer-color"></div>
-              <p class="text-muted text-muted-footer text-center">
-                &copy; Copyright Whistle 2017
-              </p>
-            </footer>
-            <!-- End of footer -->
-</body>
+        
 
+  <!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Whistle 2017
+    </p>
+  </footer>
+      <!-- End of footer -->
+
+
+
+</body>
 </html>

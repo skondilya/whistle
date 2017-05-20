@@ -57,7 +57,7 @@ $(document).ready(function(){
           var link = "mailto:skondilya@gmail.com"
             //+ "?cc=myCCaddress@example.com"
               + "&subject=" + escape("I think I am in trouble")
-              + "&body=" + escape("Hey! I need your help.Here is my location  ")
+              + "&body=" + escape("Hey! I need your help.Here is my present location  ")
               + escape("https://www.google.com/maps/@"+lat+","+long+",17z");
                                                             
           window.location.href = link;
