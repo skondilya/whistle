@@ -110,7 +110,7 @@ span.psw {
 }
 
 .navbar{
-  background-color: greenyellow;
+  background-color: #ccc;
   color: #00bfff;
   font-weight: bold;
 }
@@ -131,5 +131,8 @@ h5{
 }
 .col-md-8{
   margin-left: 160px;
+  text-align: center;
+}
+.col-md-12{
   text-align: center;
 }
