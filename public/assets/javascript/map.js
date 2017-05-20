@@ -35,45 +35,35 @@ $(document).ready(function(){
       marker.setMap(map);
     };
 
-    function sendMail() {
-     var link = "mailto:(document.getElementById('email').value)"
-             //+ "?cc=myCCaddress@example.com"
-                + "&subject=" + escape("I think I am in trouble")
-                + "&body=" + escape("Hey! Reach me at this location.I think i need your help.")
-                //+ escape(document.getElementById('myLocation').value)
-        ;
-
-       window.location.href = link;
-    }
-
-    // Function for count down timer, ends game once time runs out
+   // Function for count down timer, ends game once time runs out
     var timer = 5;
     var stopwatch = {
       startTimer : function() {
-        intervalId = setInterval(function () {
-          display = $("#time")
-          display.text(timer);
-          function sendMail() {
-          var link = "mailto:skondilya@gmail.com"
-            //+ "?cc=myCCaddress@example.com"
-              + "&subject=" + escape("I think I am in trouble")
-              + "&body=" + escape("Hey! I need your help.Here is my present location  ")
-              + escape("https://www.google.com/maps/@"+lat+","+long+",17z");
-                                                            
-          window.location.href = link;
-        }
-
-        if (--timer < 0) {
-        clearInterval(intervalId);
-        sendMail();
-        }
-        }, 1000);
+          intervalId = setInterval(function() {
+                  display = $("#time")
+                  display.text(timer);
+                  function sendMail() {
+                      $.get("/api/contacts", function(data){
+                          if (data.length == 1) {
+                            var link = "mailto:"+ data[0].EmergencyContact_email_one
+                            + "?cc=" + data[0].EmergencyContact_email_two
+                            + "&subject=" + escape("I think I am in trouble")
+                            + "&body=" + escape("Hey! I need your help.Here is my present location  ")
+                            + escape("https://www.google.com/maps/@"+lat+","+long+",17z");
+                            window.location.href = link;
+                          }
+                      });                                                                       
+                  }
+                  if (--timer < 0) {
+                    clearInterval(intervalId);
+                    sendMail();
+                  }
+          }, 1000);
       },
       reset: function(){
-      clearInterval(intervalId);   
-      }
-
-    }
+                clearInterval(intervalId);   
+            }
+  }
 
     $("#stopMail").click(function () {
        stopwatch.reset();
