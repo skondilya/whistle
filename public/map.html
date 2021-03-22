@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Map</title>
+    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="assets/project.css" type="text/css" />
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfbFj3x7Wjo4AnWFSJSWLLaArMrnEpZFw&myMap&initMap">
+    </script>
+    <script src="assets/javascript/global.js"></script>
+    <script src="assets/javascript/map.js"></script>
+
+</head>
+<body>
+  <nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/main">Whistle</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Add Contacts</a></li>
+      <li><a href="/timer">Get Me There</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class ="wrapSign">
+    <h2>My location</h2>
+    <div id="map"></div>
+</section>
+
+
+<!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Whistle 2017
+    </p>
+  </footer>
+<!-- End of footer -->
+
+<div id="resultsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><strong>Sending Location in <Span id="time"></Span> seconds....</strong></h4>
+      </div>
+      <div class="modal-body">
+        <p id="name">Click the button below to stop</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="stopMail" data-dismiss="modal">Stop</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
